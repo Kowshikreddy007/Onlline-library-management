@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library management system</title>
+</head>
+{% if msg %}
+	<script type="text/javascript">
+		alert('{{msg}}');
+	</script>
+{% endif %}
+<body>
+	<h2>Student Home</h2>
+	{% if data %}
+		<h4>{{data}}</h4>
+		<a href="/student/logout/"><button>Logout</button></a>
+	{% endif %}
+
+</body>
+</html>
